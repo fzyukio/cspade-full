@@ -16,7 +16,10 @@
 #include <cmath>
 #include <exception>
 #include <stdexcept>
+#include <memory>
+#include <algorithm>
 
+#define INT_MAX 2147483647
 
 using std::cout;
 using std::cerr;
