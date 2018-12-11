@@ -10,7 +10,7 @@ add_executable(
         argv_parser.cc argv_parser.h
         makebin.cc makebin.h
         common.cc common.h
-        Env.h)
+        Env.h argh.h)
 
 add_executable(
         getconf
@@ -19,7 +19,7 @@ add_executable(
         argv_parser.cc argv_parser.h
         calcdb.cc calcdb.h
         common.cc common.h
-        Env.h)
+        Env.h argh.h)
 
 add_executable(
         exttpose
@@ -29,7 +29,7 @@ add_executable(
         calcdb.cc calcdb.h
         TransArray.cc TransArray.h
         common.cc common.h
-        Env.h)
+        Env.h argh.h)
 
 add_executable(cspade
         spade_main.cc
@@ -47,7 +47,7 @@ add_executable(cspade
         FreqIt.cc FreqIt.h
         EqGrNode.cc EqGrNode.h
         ClassInfo.cc ClassInfo.h
-        Env.h)
+        Env.h argh.h)
 
 add_executable(cspade-full
         main.cc
@@ -72,4 +72,4 @@ add_executable(cspade-full
         FreqIt.cc FreqIt.h
         EqGrNode.cc EqGrNode.h
         ClassInfo.cc ClassInfo.h
-        Env.h)
+        Env.h argh.h)
