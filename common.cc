@@ -97,7 +97,7 @@ string random_id(const int len) {
 }
 
 string get_temp_folder() {
-#if defined(_MSC_VER)
+#if defined(WIN32) || defined(MS_WINDOWS)
     string buffer;
     buffer.resize(1000);
     const auto new_size = GetTempPathA(buffer.size(), &buffer[0]); //deal with newsize == 0
