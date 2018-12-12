@@ -72,4 +72,29 @@ add_executable(cspade-full
         FreqIt.cc FreqIt.h
         EqGrNode.cc EqGrNode.h
         ClassInfo.cc ClassInfo.h
-        Env.h argh.h dirent.h)
+        Env.h argh.h)
+
+add_executable(runtest
+        test.cc
+        makebin.cc makebin.h
+        getconf.cc getconf.h
+        exttpose.cc exttpose.h
+        Sequence.cc Sequence.h
+        wrappers.cc wrappers.h
+        calcdb.cc calcdb.h
+        TransArray.cc TransArray.h
+        Array.cc Array.h
+        Itemset.cc Itemset.h
+        Lists.cc Lists.h
+        Eqclass.cc Eqclass.h
+        InvertDatabase.cc InvertDatabase.h
+        Partition.cc Partition.h
+        Sequence.cc Sequence.h
+        common.cc common.h
+        argv_parser.cc argv_parser.h
+        Sequence.h Sequence.h
+        SpadeArguments.cc SpadeArguments.h
+        FreqIt.cc FreqIt.h
+        EqGrNode.cc EqGrNode.h
+        ClassInfo.cc ClassInfo.h
+        Env.h argh.h)

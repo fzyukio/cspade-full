@@ -30,10 +30,13 @@ cspade: $(OBJS) $(HEADER)
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o cspade spade_main.cc $(OBJS) $(LIBS)
 
 FULL_HEADER = $(HEADER) makebin.h calcdb.h getconf.h TransArray.h exttpose.h wrappers.h
-FULL_OBJS = $(OBJS) main.cc makebin.o calcdb.o getconf.o TransArray.o exttpose.o wrappers.o
+FULL_OBJS = $(OBJS) makebin.o calcdb.o getconf.o TransArray.o exttpose.o wrappers.o
 
-cspade-full: $(FULL_OBJS) $(FULL_HEADER)
-	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o cspade-full $(FULL_OBJS) $(LIBS)
+cspade-full: main.cc $(FULL_OBJS) $(FULL_HEADER)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o cspade-full main.cc $(FULL_OBJS) $(LIBS)
+
+runtest: test.cc $(FULL_OBJS) $(FULL_HEADER)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o test test.cc $(FULL_OBJS) $(LIBS)
 
 clean:
 	rm -rf *.o $(TARGET) *.dSYM

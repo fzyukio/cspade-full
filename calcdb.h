@@ -12,7 +12,7 @@
 
 class DbaseCtrlBlk {
 public:
-    DbaseCtrlBlk(){}
+    DbaseCtrlBlk() = default;
 
     void init(const string& infilename, int buf_sz = DCBBUFSZ);
 
