@@ -47,7 +47,7 @@ add_executable(cspade
         FreqIt.cc FreqIt.h
         EqGrNode.cc EqGrNode.h
         ClassInfo.cc ClassInfo.h
-        Env.h argh.h)
+        Env.h argh.h dirent.h)
 
 add_executable(cspade-full
         main.cc
@@ -72,4 +72,4 @@ add_executable(cspade-full
         FreqIt.cc FreqIt.h
         EqGrNode.cc EqGrNode.h
         ClassInfo.cc ClassInfo.h
-        Env.h argh.h)
+        Env.h argh.h dirent.h)
